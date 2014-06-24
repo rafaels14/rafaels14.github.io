@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Rafael dos Santos">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator</h1>
+    <h2>Health App</h2>
+    <p>Rafael dos Santos<br/>University of Sao Paulo</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>BMI PRIME</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>BMI Prime, a simple modification of the BMI system, is the ratio of actual BMI to upper limit BMI (currently defined at BMI 25).</p>
+
+<p>For instance, a person with BMI 34 has a BMI Prime of 34/25 = 1.36, and is 36% over his or her upper mass limit.</p>
+
+<p>In South East Asian and South Chinese populations (see international variation section below) BMI Prime should be calculated using an upper limit BMI of 23 in the denominator instead of 25.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>BODY MASS INDEX (BMI)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a simple BMI (Body Mass Index) calculator that takes the weight and the height according to the follow function.</p>
+
+<p>\[BMI = weight/(height^2)\]</p>
+
+<p>Although some authors seggest to use a diferent expoent, it would be more appropriate to use an exponent of between 2.3 and 2.7.</p>
+
+<p>But in this work we&#39;ll use the patern expoent (2).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>EXAMPLES</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you have a weight of 80 kg (sorry, but I&#39;ll use international units (: ) and 1.87m height, then by equation from the past slide:</p>
+
+<p>\[BMI = 80/(1.87^2)\]
+\[BMI = 22.877\]</p>
+
+<p>Almost all the countries uses the patern as 25 of BMI.
+Then, to calculate the BMI prime we have to divide the BMI for the patern:</p>
+
+<p>\[Prime = BMI/PATERN\]
+\[Prime = 22.877/25\]
+\[Prime = 0.9151\]</p>
+
+<p>It means that this person has 91.51% of mass relative to the patern; or else, he&#39;s inside the ideal BMI. 8.49% percentual points above the limit of overweight.
+If we have a person with BMI = 30, than the BMI Prime will be equal to 1.20, or else, this person is 20% overweight.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>CLASSIFICATION TABLE</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://www.nature.com/clpt/journal/v90/n1/images/clpt2011104t1.gif"/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='BMI PRIME'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='BODY MASS INDEX (BMI)'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='EXAMPLES'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='CLASSIFICATION TABLE'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
